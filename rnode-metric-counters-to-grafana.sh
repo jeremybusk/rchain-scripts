@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# A quick and dirty conversion of exposed rnode prometheus metric counters to grafana json dashboard
+
 header=$(cat <<-EOM
 {
   "__inputs": [
@@ -16,19 +18,19 @@ header=$(cat <<-EOM
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "5.0.0"
+      "version": "5.2.1"
     },
     {
       "type": "panel",
       "id": "graph",
       "name": "Graph",
-      "version": "5.0.0"
+      "version": "5.2.1"
     },
     {
       "type": "datasource",
       "id": "prometheus",
       "name": "Prometheus",
-      "version": "5.0.0"
+      "version": "5.2.1"
     }
   ],
   "annotations": {
