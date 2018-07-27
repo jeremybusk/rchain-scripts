@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+# sudo docker run -dit --name deploy.rchain.coop --network rchain.coop debian
 # apt update && apt -y install wget nano && wget https://repo.pyr8.io/rchain/downloads/dev/rnode_0.5.3_all.deb && apt -y install ./rnode_0.5.3_all.deb
-sudo docker run -dit --name deploy.rchain.coop --network rchain.coop debian
+# update grpc_hosts to whatever the names of your peers are, add to file chmod 700 and run that guy
 deploy_loop_counter=0
 deploy_loop_counter_max=1
 propose_loop_counter=0
