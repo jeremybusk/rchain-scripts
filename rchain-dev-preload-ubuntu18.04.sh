@@ -16,7 +16,7 @@ set -eo pipefail
 fi
 
 
-## Verify operating system (OS) version is Ubuntu 16.04 LTS (Xenial Xerus)
+## Verify operating system (OS) version is Ubuntu 18.04 LTS (Bionic Beaver)
 # Add more OS versions as necessary. 
 version=$(cat /etc/*release | grep "^VERSION_ID" | awk -F= '{print $2}' | sed 's/"//g')
 if [[ "$version" == "18.04" ]]; then
@@ -31,7 +31,7 @@ fi
 apt-get update -yqq
 apt-get install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable"
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 apt-get update -yqq
 apt install -y docker-ce sudo wget curl
 apt install -y python3 python3-pip
