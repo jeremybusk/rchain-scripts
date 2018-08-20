@@ -64,9 +64,9 @@ apt-get install jflex -yqq
 apt-get install autoconf libtool -yqq
 
 #./scripts/install_secp.sh
-apt-get -yq install libsecp256k1-0
+# apt-get -yq install libsecp256k1-0
 #./scripts/install_sodium.sh
-apt-get -yq install libsodium23
+# apt-get -yq install libsodium23
 # apt-get -yq install bnfc # 2.8.1 is last release and doesn't have Kyle's changes
 
 apt-get -yq install rpm
